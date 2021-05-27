@@ -24,6 +24,19 @@ public class Problem04_3 {
 			words[i] = sc.next();
 			
 			//투 포인터 알고리즘을 적용 시킨다.
+			int lt = 0;
+			int rt = (words[i].length() - 1);
+			
+			char[] word = words[i].toCharArray();
+			while(lt <= rt) {
+				char temp = word[lt];
+				word[lt] = word[rt];
+				word[rt] = temp;
+				++lt;
+				--rt;
+			}
+			
+			answer[i] = String.valueOf(word);
 		}
 		
 		for(String result : answer) {
