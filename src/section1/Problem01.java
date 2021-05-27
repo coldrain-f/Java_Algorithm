@@ -7,13 +7,13 @@ public class Problem01 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
-		//ÇÑ °³ÀÇ ¹®ÀÚ¿­À» ÀÔ·Â¹Ş´Â´Ù.
+		////í•œ ê°œì˜ ë¬¸ìì—´ì„ ì…ë ¥ë°›ëŠ”ë‹¤.
 		String str = sc.next().toUpperCase();
 		
-		//Æ¯Á¤ ¹®ÀÚ ÇÏ³ª¸¦ ÀÔ·Â¹Ş´Â´Ù.
+		//íŠ¹ì • ë¬¸ì í•˜ë‚˜ë¥¼ ì…ë ¥ë°›ëŠ”ë‹¤.
 		char specificCharacter = sc.next().toUpperCase().charAt(0);
 		
-		//¹®ÀÚ¿­¿¡ Æ¯Á¤ ¹®ÀÚ°¡ ¸î °³ ÀÖ´ÂÁö ¼¼´Â ¾Ë°í¸®ÁòÀ» ÀÛ¼ºÇÏ½Ã¿À.(´ë¼Ò¹®ÀÚ ±¸ºĞX)
+		//ë¬¸ìì—´ì— íŠ¹ì • ë¬¸ìê°€ ëª‡ ê°œ ìˆëŠ”ì§€ ì„¸ëŠ” ì•Œê³ ë¦¬ì¦˜ì„ ì‘ì„±í•˜ì‹œì˜¤.(ëŒ€ì†Œë¬¸ì êµ¬ë¶„X)
 		int count = 0;
 		
 		for(char token : str.toCharArray()) {

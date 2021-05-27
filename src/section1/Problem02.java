@@ -7,22 +7,22 @@ public class Problem02 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
-		//´ë¹®ÀÚ¿Í ¼Ò¹®ÀÚ°¡ °°ÀÌ Á¸ÀçÇÏ´Â ¹®ÀÚ¿­À» ÀÔ·Â¹Ş¾Æ ´ë¹®ÀÚ´Â ¼Ò¹®ÀÚ·Î ¼Ò¹®ÀÚ´Â ´ë¹®ÀÚ·Î º¯È¯ÇÏ¿© Ãâ·ÂÇÏ´Â ÇÁ·Î±×·¥À» ÀÛ¼ºÇÏ¼¼¿ä.
+		//ëŒ€ë¬¸ìì™€ ì†Œë¬¸ìê°€ ê°™ì´ ì¡´ì¬í•˜ëŠ” ë¬¸ìì—´ì„ ì…ë ¥ë°›ì•„ ëŒ€ë¬¸ìëŠ” ì†Œë¬¸ìë¡œ ì†Œë¬¸ìëŠ” ëŒ€ë¬¸ìë¡œ ë³€í™˜í•˜ì—¬ ì¶œë ¥í•˜ëŠ” í”„ë¡œê·¸ë¨ì„ ì‘ì„±í•˜ì„¸ìš”.
 		
-		//¹®ÀÚ¿­ ÀÔ·Â
+		//ë¬¸ìì—´ ì…ë ¥
 		String str = sc.next();
 		
-		//Á¤´äÀ» ÀúÀåÇÒ ¹®ÀÚ¿­ ºô´õ ¼±¾ğ
+		//ì •ë‹µì„ ì €ì¥í•  ë¬¸ìì—´ ë¹Œë” ì„ ì–¸
 		StringBuilder answer = new StringBuilder();
 		
 		for(char token : str.toCharArray()) {
-			//¹®ÀÚ°¡ ´ë¹®ÀÚ¶ó¸é
+			//ë¬¸ìê°€ ëŒ€ë¬¸ìë¼ë©´
 			if(Character.isUpperCase(token)) {
-				//¼Ò¹®ÀÚ·Î º¯°æÇÏ°í Á¤´ä¿¡ Áı¾î³Ö´Â´Ù.
+				//ì†Œë¬¸ìë¡œ ë³€ê²½í•˜ê³  ì •ë‹µì— ì§‘ì–´ë„£ëŠ”ë‹¤.
 				token = Character.toLowerCase(token);
 				answer.append(token);
-			} else if(Character.isLowerCase(token)) { //¼Ò¹®ÀÚ¶ó¸é
-				//´ë¹®ÀÚ·Î º¯°æÇÏ°í Á¤´ä¿¡ Áı¾î³Ö´Â´Ù.
+			} else if(Character.isLowerCase(token)) { //ì†Œë¬¸ìë¼ë©´
+				//ëŒ€ë¬¸ìë¡œ ë³€ê²½í•˜ê³  ì •ë‹µì— ì§‘ì–´ë„£ëŠ”ë‹¤.
 				token = Character.toUpperCase(token);
 				answer.append(token);
 			}
