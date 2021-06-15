@@ -30,4 +30,5 @@ public class Problem05 {
 		
 		System.out.println(primeCount);
 	}
+	
 }
