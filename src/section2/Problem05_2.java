@@ -2,6 +2,7 @@ package section2;
 
 import java.util.Scanner;
 
+//5. 소수 (에라토스테네스의 체) 시간 초과
 public class Problem05_2 {
 	
 	private static final Scanner sc = new Scanner(System.in);
