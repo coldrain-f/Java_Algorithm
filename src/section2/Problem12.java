@@ -40,7 +40,7 @@ public class Problem12 {
 						}
 					}
 					if (rank[MENTO] < rank[MENTI]) {
-						flag = true; //false true true
+						flag = true;
 					} else {
 						flag = false; 
 						break;
