@@ -29,6 +29,7 @@ public class Problem02 {
 		
 		//교집합 메서드
 		set1.retainAll(set2);
+
 		
 		//TreeSet 자료구조는 자동으로 오름차순으로 정렬한다.
 		for (int element : set1) {
